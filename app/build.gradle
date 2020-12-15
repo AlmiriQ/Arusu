@@ -2,15 +2,14 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "usr.almy.arusu"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 6
-        versionName '1.7'
-        multiDexEnabled true
+        versionCode 10
+        versionName '2.0e'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
