@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name" translatable="false">Floating Arusu</string>
+    <string name="size">Size</string>
+    <string name="lightning">Lightning</string>
+    <string name="particles">Particles</string>
+    <string name="p_count">Particles count</string>
+    <string name="Maria">Maria</string>
+    <string name="ITohka">I-Tohka</string>
+    <string name="Tohka">Tohka</string>
+    <string name="Yoshino">Yoshino</string>
+    <string name="Kotori">Kotori</string>
+    <string name="Kurumi">Kurumi</string>
+    <string name="Origami">Origami</string>
+    <string name="IOrigami">I-Origami</string>
+    <string name="bt_setting">Turn Bluetooth off when clicked</string>
+    <string name="mc_setting">Clear memory when clicked</string>
+    <string name="ns_setting">Play \"nya\" sound when clicked</string>
+    <string name="error_downside">Write to the developer to solve the problem.</string>
+    <string name="error_service_start">Error while starting service…</string>
+    <string name="overlay_show">Show overlay</string>
+    <string name="custom_char">Your image for floating character…</string>
+    <string name="sm_setting">Sine movement</string>
+</resources>

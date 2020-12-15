@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="size">Размер</string>
+    <string name="lightning">Молнии</string>
+    <string name="particles">Частицы</string>
+    <string name="p_count">Количество частиц</string>
+    <string name="Maria">Мария</string>
+    <string name="ITohka">И-Тока</string>
+    <string name="Tohka">Тока</string>
+    <string name="Yoshino">Йошино</string>
+    <string name="Kotori">Котори</string>
+    <string name="Kurumi">Куруми</string>
+    <string name="Origami">Оригами</string>
+    <string name="IOrigami">И-Оригами</string>
+    <string name="bt_setting">Выключать Bluetooth при нажатии</string>
+    <string name="mc_setting">Очищать память при нажатии</string>
+    <string name="ns_setting">Играть звук \"ня\" при нажатии</string>
+    <string name="error_downside">Для решения проблемы напишите разработчику.</string>
+    <string name="overlay_show">Показ оверлея</string>
+    <string name="custom_char">Ваше изображение для летающего персонажа…</string>
+    <string name="sm_setting">Движение по синусу</string>
+</resources>
