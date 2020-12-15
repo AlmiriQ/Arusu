@@ -16,7 +16,6 @@
     <string name="mc_setting">Clear memory when clicked</string>
     <string name="ns_setting">Play \"nya\" sound when clicked</string>
     <string name="error_downside">Write to the developer to solve the problem.</string>
-    <string name="error_service_start">Error while starting service…</string>
     <string name="overlay_show">Show overlay</string>
     <string name="custom_char">Your image for floating character…</string>
     <string name="sm_setting">Sine movement</string>
