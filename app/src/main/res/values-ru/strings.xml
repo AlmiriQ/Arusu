@@ -19,4 +19,5 @@
     <string name="overlay_show">Показ оверлея</string>
     <string name="custom_char">Ваше изображение для летающего персонажа…</string>
     <string name="sm_setting">Движение по синусу</string>
+    <string name="opacity">Прозрачность</string>
 </resources>

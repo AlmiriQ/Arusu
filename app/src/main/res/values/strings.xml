@@ -19,4 +19,5 @@
     <string name="overlay_show">Show overlay</string>
     <string name="custom_char">Your image for floating character…</string>
     <string name="sm_setting">Sine movement</string>
+    <string name="opacity">Opacity</string>
 </resources>

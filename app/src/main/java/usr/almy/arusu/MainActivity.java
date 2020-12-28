@@ -90,7 +90,7 @@ public class MainActivity extends Activity {
 		SeekBar size = new SeekBar(this);
 		size.setMax(220);
 		size.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-			//когда изменяют положение seekbar'а
+			//надо
 			@Override
 			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
@@ -102,7 +102,7 @@ public class MainActivity extends Activity {
 
 			}
 
-			//надо
+			//когда изменили seekbar
 			@Override
 			public void onStopTrackingTouch(SeekBar seekBar) {
 				int progress = seekBar.getProgress();
@@ -172,9 +172,7 @@ public class MainActivity extends Activity {
 
 				getString(R.string.sm_setting));
 		sm.setChecked(sp.getBoolean("sm", true));
-		sm.setOnCheckedChangeListener((buttonView, isChecked) ->
-
-		{
+		sm.setOnCheckedChangeListener((buttonView, isChecked) -> {
 			Overlay.now.overlay.sin_m = isChecked;
 			SharedPreferences.Editor editor = sp.edit();
 			editor.putBoolean("sm", isChecked);
@@ -229,6 +227,40 @@ public class MainActivity extends Activity {
 		int spos = sp.getInt("char", 0);
 		character.setSelection(spos);
 
+		TextView opacity_t = new TextView(this);
+		opacity_t.setText(getString(R.string.opacity));
+		opacity_t.setTextSize(24);
+		opacity_t.setTypeface(dalsp);
+		opacity_t.setTextColor(0xffe3e3e3);
+		opacity_t.setGravity(Gravity.CENTER);
+		SeekBar opacity = new SeekBar(this);
+		opacity.setMax(70);
+		opacity.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+			//надо
+			@Override
+			public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+			}
+
+			//надо
+			@Override
+			public void onStartTrackingTouch(SeekBar seekBar) {
+
+			}
+
+			//когда изменили seekbar
+			@Override
+			public void onStopTrackingTouch(SeekBar seekBar) {
+				int progress = seekBar.getProgress() + 30 - 1;
+				SharedPreferences.Editor editor = sp.edit();
+				editor.putInt("opacity", progress);
+				editor.apply();
+				Overlay.now.overlay.alpha = progress * 256 / 100;
+			}
+		});
+		int opacity_ = sp.getInt("opacity", 70);
+		opacity.setProgress(opacity_);
+
 		//чтобы ставить свою картинку
 		Button cc = new Button(this);
 		cc.setOnClickListener(v ->
@@ -252,6 +284,8 @@ public class MainActivity extends Activity {
 		main.addView(sm);
 		main.addView(tv);
 		main.addView(size);
+		main.addView(opacity_t);
+		main.addView(opacity);
 		main.addView(light);
 		main.addView(character);
 		main.addView(bto);

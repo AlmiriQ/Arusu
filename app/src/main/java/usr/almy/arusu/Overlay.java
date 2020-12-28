@@ -74,6 +74,7 @@ class CharView extends SurfaceView implements Runnable {
 	volatile boolean sin_m; //параметр движения по синусу
 	volatile boolean loaded; //флаг загрузки
 	Canvas canvas; //холст
+	int alpha = 255; //прозрачность
 
 	//конструктор
 	@SuppressLint("UseCompatLoadingForDrawables")
@@ -81,6 +82,7 @@ class CharView extends SurfaceView implements Runnable {
 		super(context); //надо
 		gfx = new Thread(this); //граф. поток
 		upd = new UpdateThread(this); //поток обновлений
+
 		sh = getHolder(); //холдер //не знаю почему, но если пытаться получить его после инициализации, то кидает ошибку, поэтому буду получать его здесь
 		ctx = context; //контекст
 		//настройки
@@ -240,6 +242,7 @@ class CharView extends SurfaceView implements Runnable {
 					parent.p = paints[idx++];
 					idx %= 100;
 				} else parent.p = parent.default_paint; //чтобы сбросить эффект
+				parent.p.setAlpha(parent.alpha);
 				et = System.currentTimeMillis();
 			}
 		}
